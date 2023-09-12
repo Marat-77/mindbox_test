@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mindbox-test"
+version = "0.1.0"
+description = ""
+authors = ["zmd <maratz375@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mindbox_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
