@@ -1,14 +1,16 @@
 [tool.poetry]
 name = "mindbox-test"
 version = "0.1.0"
-description = ""
-authors = ["zmd <maratz375@gmail.com>"]
+description = "The solution of the test task from Mindbox"
+authors = ["Marat-77 <z77marat@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "mindbox_test"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 pytest = "^7.4.2"
+pyspark = "^3.4.1"
+sqlalchemy = "^2.0.20"
 
 
 [build-system]
