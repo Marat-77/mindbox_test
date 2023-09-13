@@ -1,6 +1,6 @@
 import pytest
 
-from mindbox_test.geometric_figure import Figure
+from mindbox_task_1.geometric_figure import Figure
 
 
 results = [(2, 3, 4, (2, 3, 4)),

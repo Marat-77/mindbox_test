@@ -1,5 +1,5 @@
 from functools import reduce
-from pprint import pprint
+from typing import NoReturn
 
 
 # Напишите на C# или Python библиотеку для поставки внешним клиентам,
@@ -78,7 +78,7 @@ class Figure:
                 return cls.__figure_types.get(len(value))
             return cls.__figure_types.get('z')
 
-    def set_radius(self, radius: int | float):
+    def set_radius(self, radius: int | float) -> NoReturn:
         if self.__sides is not None:
             raise AttributeError(
                 f'У данной фигуры ({self.__figure_type}) не может быть радиуса'
@@ -87,7 +87,7 @@ class Figure:
         self.__figure_type = self.__check_figure_type(radius, 'circle')
         self.__radius = radius
 
-    def set_sides(self, *sides: int | float):
+    def set_sides(self, *sides: int | float) -> NoReturn:
         if self.__radius is not None:
             raise AttributeError(
                 f'У данной фигуры ({self.__figure_type}) не может быть сторон'
